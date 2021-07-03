@@ -3,21 +3,29 @@ body {
     margin: 0;
     font-family: "Ubuntu", sans-serif;
 }
-.hero-section {
+.display-flex-contianer {
     display: flex;
     padding: 20px 40px;
+    margin-bottom: 150px;
+}
+.hero-section {
+    background-image: url(images/top-banner.png);
+    background-repeat: no-repeat;
 }
 .width-50 {
     width: 50%;
-    padding: 0px 80px;
+    padding: 0px 40px;
 }
-.hero-section h1 {
+.hero-section h1,
+.dream-big-section h1,
+.experience-secton h1 {
     font-size: 50px;
 }
 .hero-section #highlight-text {
     color: orange;
 }
-.hero-section p {
+.hero-section p,
+.dream-big-section p {
     font-size: 18px;
     line-height: 24px;
 }
@@ -30,5 +38,44 @@ body {
     border-radius: 5px;
 }
 .hero-section img {
-    height: 700px;
+    width: 500px;
+}
+.dream-big-section {
+    background-image: url(images/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.dream-big-section img {
+    width: 500px;
+}
+.experience-secton {
+    background-image: url(images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.card {
+    height: 400px;
+    padding: 20px 40px;
+    box-shadow: 0px 0px 40px gray;
+}
+.card h4 {
+    color: orange;
+}
+.card p {
+    font-size: 16px;
+    line-height: 24px;
+}
+#full-stack-card {
+    border-left: 7px solid;
+    border-image: linear-gradient(lightsalmon, tomato);
+    border-image-slice: 1;
+}
+#baby-developer-card {
+    border-left: 7px solid;
+    border-image: linear-gradient(blue, cyan);
+    border-image-slice: 1;
+}
+footer p {
+    text-align: center;
+    color: #979797;
 }
